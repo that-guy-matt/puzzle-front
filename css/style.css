@@ -1,6 +1,29 @@
 /* This is the sass file for puzzle front */
-header {
-  background-color: pink;
+/* color theme */
+header, footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-main {
+  background-color: #FF7E2D;
+  color: #fff;
+}
+
+.btn-main:hover {
+  background-color: #854218;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff7e2d;
+  color: #ff7e2d;
+}
+
+.btn-outline:hover {
+  background-color: #ff7e2d;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
