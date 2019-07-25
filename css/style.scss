@@ -1,39 +1,71 @@
 /* This is the sass file for puzzle front */
 
-/* color theme */
+/* table of contents
+    * variables
+      * colors
+      * fonts
+    * base
+    * layout
+    * module
+    * state
+
+*/
+
+/* variables */
+/* colors */
 $color-main: #333333;
-$color-secondary: #999999;
+$color-background: #999999;
+$color-content-background: #FFFFFF;
+$color-text: #FFFFFF;
+$color-action: #FF7E2D;
+$color-action-highlight: #FF9A5B;
+
+/* fonts */
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Montserrat&display=swap');
+$font-h: 'Carter One', cursive;
+$font-base: 'Montserrat', sans-serif;
+/* base */
+
 
 body {
-  background-color: #999;
+  background-color: $color-background;
+  font-family: $font-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-h;
 }
 
 header, footer {
-  background-color: #333;
-  color: #fff;
-}
-
-.btn-main {
-  background-color: #FF7E2D;
-  color: #fff;
-}
-
-.btn-main:hover {
-  background-color: #854218;
-  color: #fff;
-}
-
-.btn-outline {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ff7e2d;
-  color: #ff7e2d;
-}
-
-.btn-outline:hover {
-  background-color: #ff7e2d;
-  color: #fff;
+  background-color: $color-main;
+  color: $color-text;
 }
 
 .main-content {
-  background-color: #fff;
+  background-color: $color-content-background;
+}
+
+/* layout - layout is mostly handled by bootstrap.
+I have kept the section in case I need any layout
+related fixes or tweaks */
+
+/* modules */
+
+.btn-main {
+  background-color: $color-action;
+  color: $color-text;
+}
+
+/* state */
+
+.btn-main:hover {
+  background-color: $color-action-highlight;
+  color: $color-text;
+}
+
+.btn-main:active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid $color-action;
+  color: $color-action;
 }
