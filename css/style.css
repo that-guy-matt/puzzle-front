@@ -22,6 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Carter One", cursive;
+  padding: 1.2rem 0;
 }
 
 header, footer {
@@ -36,6 +37,14 @@ header, footer {
 /* layout - layout is mostly handled by bootstrap.
 I have kept the section in case I need any layout
 related fixes or tweaks */
+.main-content {
+  padding: 2rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
 /* modules */
 .btn-main {
   background-color: #FF7E2D;
