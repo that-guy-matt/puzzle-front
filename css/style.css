@@ -45,7 +45,24 @@ footer {
   padding: 1rem;
 }
 
+form > label {
+  text-align: left !important;
+}
+
+.center-item {
+  min-height: 100%;
+  /* fix for incompatible browsers */
+  min-height: 100vh;
+  /* fix for incompatible browsers */
+  display: flex;
+  align-items: center;
+}
+
 /* modules */
+.form-login {
+  max-width: 480px;
+}
+
 .btn-main {
   background-color: #FF7E2D;
   color: #FFFFFF;
@@ -61,6 +78,21 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #FF7E2D;
   color: #FF7E2D;
+}
+
+/* media queries */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 0;
+  }
+
+  .center-item {
+    display: block;
+  }
+
+  .card {
+    border-radius: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

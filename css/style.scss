@@ -59,7 +59,23 @@ footer {
   padding: 1rem;
 }
 
+form > label {
+  text-align: left !important;
+}
+
+.center-item {
+  min-height: 100%; /* fix for incompatible browsers */
+  min-height: 100vh; /* fix for incompatible browsers */
+
+  display: flex;
+  align-items: center;
+}
+
 /* modules */
+
+.form-login {
+  max-width: 480px;
+}
 
 .btn-main {
   background-color: $color-action;
@@ -77,4 +93,20 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid $color-action;
   color: $color-action;
+}
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 0;
+  }
+
+  .center-item {
+    display: block;
+  }
+
+  .card {
+    border-radius: 0;
+  }
 }
