@@ -79,7 +79,7 @@ form > label {
 
 .btn-main {
   background-color: $color-action;
-  color: $color-text;
+  color: $color-text !important;
 }
 
 /* state */
@@ -92,7 +92,7 @@ form > label {
 .btn-main:active {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid $color-action;
-  color: $color-action;
+  color: $color-action !important;
 }
 
 /* media queries */
