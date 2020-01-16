@@ -20,5 +20,6 @@ The game itself is a future project and the styling of the website will be updat
 Future plans for the project:
 
 1. Connect the front end to the back end
-2. Create a fitting puzzle game
-3. Reskin the website to fit the style of the game, if necessary
+2. Add JavaScript form validation
+3. Create a fitting puzzle game
+4. Reskin the website to fit the style of the game, if necessary
